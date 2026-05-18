@@ -5,21 +5,21 @@
 class BacklogMcp < Formula
   desc "A local MCP server that gives AI agents read/write access to a story-based project backlog"
   homepage "https://github.com/corbym/backlog-mcp"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.0/backlog-mcp_1.1.0_darwin_amd64.tar.gz"
-      sha256 "5a50e6651bd35260870d70de7811683167832639654400261c411863495b0862"
+      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.1/backlog-mcp_1.1.1_darwin_amd64.tar.gz"
+      sha256 "1466b01b2778ceff458c9180b48249ff3c47902b13cda287b6446224803f5846"
 
       define_method(:install) do
         bin.install "backlog-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.0/backlog-mcp_1.1.0_darwin_arm64.tar.gz"
-      sha256 "74daf0fc45db64367444e34daca8cf2bef4f1b69da2f3b69bef2f35f28048f5d"
+      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.1/backlog-mcp_1.1.1_darwin_arm64.tar.gz"
+      sha256 "cb39bd1566be687ebae5bcb552b58149c783dfff4bd57ef1169b89a49065c7d9"
 
       define_method(:install) do
         bin.install "backlog-mcp"
@@ -29,15 +29,15 @@ class BacklogMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.0/backlog-mcp_1.1.0_linux_amd64.tar.gz"
-      sha256 "109323fd9910d5c9aed541954c51b0acdf0ef78dd94635b9b8f6b41d13372b0c"
+      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.1/backlog-mcp_1.1.1_linux_amd64.tar.gz"
+      sha256 "aee5bbff45e796b39438120e08312d020d99fe76ab5bd52d2c19c6835641fc86"
       define_method(:install) do
         bin.install "backlog-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.0/backlog-mcp_1.1.0_linux_arm64.tar.gz"
-      sha256 "138d384db4d03907a9daa75abc75780e2c526d35170998d3388b00ea8dfd0121"
+      url "https://github.com/corbym/backlog-mcp/releases/download/v1.1.1/backlog-mcp_1.1.1_linux_arm64.tar.gz"
+      sha256 "a924e3ca7f5190730cf8b78fbd1f325b851e6074b4b18bb330bd37bb693b141c"
       define_method(:install) do
         bin.install "backlog-mcp"
       end
